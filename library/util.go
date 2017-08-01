@@ -61,16 +61,18 @@ func YearDay(month, day int) int {
 
 func YearDay2Date(yearDay int) string {
 	var date string
-	var month, day = 1, 0
+	var month, day = 0, 0
 
 	for i := 1; i < 13; i++ {
 		if yearDay-yearMonthDay[i] > 0 {
-			month++
 			yearDay -= yearMonthDay[i]
 			continue
+		} else {
+			day = yearDay
+			month = i
+			break
 		}
 
-		day = yearDay
 	}
 
 	date = strconv.Itoa(month) + "-" + strconv.Itoa(day)

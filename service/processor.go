@@ -72,6 +72,8 @@ func (p *Processor) FindDay(date string) error {
 		return errors.New("invalid date")
 	}
 
+	fmt.Println("post:", yearDay)
+
 	p.Today = p.Calendar.Days[yearDay]
 
 	return nil
@@ -115,6 +117,7 @@ func (p *Processor) FindHarvestDay() (Day, error) {
 
 		if growth == growthToHarvest {
 			harVestDay = p.Calendar.Days[i]
+			fmt.Println("harvest:", i, harVestDay)
 			break
 		}
 
