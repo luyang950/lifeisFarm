@@ -19,6 +19,8 @@ func calHarvest(w http.ResponseWriter, r *http.Request) {
 	post := r.PostFormValue("date")
 
 	if post == "" {
+		fmt.Println("invalid param")
+
 		response.Code = -1
 		response.Msg = "invalid param"
 		response.Data = ""
@@ -26,6 +28,8 @@ func calHarvest(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, genJSONStr(response))
 		return
 	}
+
+	fmt.Println("date:", post)
 
 	var date = post
 
@@ -49,6 +53,7 @@ func calHarvest(w http.ResponseWriter, r *http.Request) {
 	response.Msg = "success"
 	response.Data = harvestDate
 
+	fmt.Println("harvest date:", harvestDate)
 	fmt.Fprintf(w, genJSONStr(response))
 }
 
