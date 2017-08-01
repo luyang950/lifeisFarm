@@ -1,0 +1,85 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;farmerCalendar&gt;">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../cmc" />
+      <root url="file://$PROJECT_DIR$/../front" />
+      <root url="file://$PROJECT_DIR$/../qqweb" />
+      <root url="file://$PROJECT_DIR$/../alert_1" />
+      <root url="file://$PROJECT_DIR$/../asrc" />
+      <root url="file://$PROJECT_DIR$/../test" />
+      <root url="file://$PROJECT_DIR$/../grafana" />
+      <root url="file://$PROJECT_DIR$/../svn_asrc" />
+      <root url="file://$PROJECT_DIR$/../golang_publish" />
+      <root url="file://$PROJECT_DIR$/../vod_go_view" />
+      <root url="file://$PROJECT_DIR$/../monitor" />
+      <root url="file://$PROJECT_DIR$/../doo" />
+      <root url="file://$PROJECT_DIR$/../pub" />
+      <root url="file://$PROJECT_DIR$/../manage" />
+      <root url="file://$PROJECT_DIR$/../mqc" />
+      <root url="file://$PROJECT_DIR$/../tes" />
+      <root url="file://$PROJECT_DIR$/../dooweb" />
+      <root url="file://$PROJECT_DIR$/../live_go_room" />
+      <root url="file://$PROJECT_DIR$/../sourcegraph.com" />
+      <root url="file://$PROJECT_DIR$/../live_go_service" />
+      <root url="file://$PROJECT_DIR$/../view" />
+      <root url="file://$PROJECT_DIR$/../helloworld" />
+      <root url="file://$PROJECT_DIR$/../practice" />
+      <root url="file://$PROJECT_DIR$/../github.com" />
+      <root url="file://$PROJECT_DIR$/../golang.org" />
+      <root url="file://$PROJECT_DIR$/../go_asrc_bin" />
+      <root url="file://$PROJECT_DIR$/../备份" />
+      <root url="file://$PROJECT_DIR$/../nsq" />
+      <root url="file://$PROJECT_DIR$/../gopkg.in" />
+      <root url="file://$PROJECT_DIR$/../go_etc" />
+      <root url="file://$PROJECT_DIR$/../zabbix" />
+      <root url="file://$PROJECT_DIR$/../douyu" />
+      <root url="file://$PROJECT_DIR$/../goweb" />
+      <root url="file://$PROJECT_DIR$/../alert" />
+      <root url="file://$PROJECT_DIR$/../git.dz11.com" />
+      <root url="file://$PROJECT_DIR$/../live_go_stream" />
+      <root url="file://$PROJECT_DIR$/../google.golang.org" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../cmc" />
+      <root url="file://$PROJECT_DIR$/../front" />
+      <root url="file://$PROJECT_DIR$/../qqweb" />
+      <root url="file://$PROJECT_DIR$/../alert_1" />
+      <root url="file://$PROJECT_DIR$/../asrc" />
+      <root url="file://$PROJECT_DIR$/../test" />
+      <root url="file://$PROJECT_DIR$/../grafana" />
+      <root url="file://$PROJECT_DIR$/../svn_asrc" />
+      <root url="file://$PROJECT_DIR$/../golang_publish" />
+      <root url="file://$PROJECT_DIR$/../vod_go_view" />
+      <root url="file://$PROJECT_DIR$/../monitor" />
+      <root url="file://$PROJECT_DIR$/../doo" />
+      <root url="file://$PROJECT_DIR$/../pub" />
+      <root url="file://$PROJECT_DIR$/../manage" />
+      <root url="file://$PROJECT_DIR$/../mqc" />
+      <root url="file://$PROJECT_DIR$/../tes" />
+      <root url="file://$PROJECT_DIR$/../dooweb" />
+      <root url="file://$PROJECT_DIR$/../live_go_room" />
+      <root url="file://$PROJECT_DIR$/../sourcegraph.com" />
+      <root url="file://$PROJECT_DIR$/../live_go_service" />
+      <root url="file://$PROJECT_DIR$/../view" />
+      <root url="file://$PROJECT_DIR$/../helloworld" />
+      <root url="file://$PROJECT_DIR$/../practice" />
+      <root url="file://$PROJECT_DIR$/../github.com" />
+      <root url="file://$PROJECT_DIR$/../golang.org" />
+      <root url="file://$PROJECT_DIR$/../go_asrc_bin" />
+      <root url="file://$PROJECT_DIR$/../备份" />
+      <root url="file://$PROJECT_DIR$/../nsq" />
+      <root url="file://$PROJECT_DIR$/../gopkg.in" />
+      <root url="file://$PROJECT_DIR$/../go_etc" />
+      <root url="file://$PROJECT_DIR$/../zabbix" />
+      <root url="file://$PROJECT_DIR$/../douyu" />
+      <root url="file://$PROJECT_DIR$/../goweb" />
+      <root url="file://$PROJECT_DIR$/../alert" />
+      <root url="file://$PROJECT_DIR$/../git.dz11.com" />
+      <root url="file://$PROJECT_DIR$/../live_go_stream" />
+      <root url="file://$PROJECT_DIR$/../google.golang.org" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>

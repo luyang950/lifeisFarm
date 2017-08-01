@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="11c42345-8033-4acd-add5-c607a37408d8" name="10.1.41.47" url="http://10.1.41.47">
+        <fileTransfer host="10.1.41.47" port="21" rootFolder="/home/www/server/gopath/src/farmerCalendar">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
