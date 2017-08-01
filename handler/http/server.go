@@ -12,7 +12,7 @@ const(
 func StartServer() {
 	http.HandleFunc("/harvest", calHarvest)
 
-	err := http.ListenAndServe("104.238.141.25:" + port, nil)
+	err := http.ListenAndServe("127.0.0.1:" + port, nil)
 	if err != nil {
 		fmt.Println("failed to start server:", err)
 	}
