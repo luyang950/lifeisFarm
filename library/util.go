@@ -1,7 +1,6 @@
 package library
 
 import (
-	"fmt"
 	"strconv"
 )
 
@@ -22,8 +21,6 @@ var yearMonthDay = map[int]int{
 
 func YearDay(month, day int) int {
 	var dayNum int
-
-	fmt.Println(month, day)
 
 	switch month {
 	case 1:
@@ -58,8 +55,6 @@ func YearDay(month, day int) int {
 
 	// 配置文件中从0开始
 	dayNum--
-
-	fmt.Println(dayNum)
 
 	return dayNum
 }
