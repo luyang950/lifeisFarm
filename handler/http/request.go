@@ -11,7 +11,7 @@ import (
 type jsonResponse struct {
 	Code int    `json:"code"`
 	Msg  string `json:"msg"`
-	Data string `json:"data"`
+	Data []string `json:"data"`
 }
 
 func calHarvest(w http.ResponseWriter, r *http.Request) {
@@ -23,37 +23,42 @@ func calHarvest(w http.ResponseWriter, r *http.Request) {
 
 		response.Code = -1
 		response.Msg = "invalid param"
-		response.Data = ""
+		response.Data = []string{}
 
 		fmt.Fprintf(w, genJSONStr(response))
 		return
 	}
 
-	fmt.Println("date:", post)
+	fmt.Println("plantDate:", post)
 
-	var date = post
+	var plantDate = post
 
 	var processor = service.Processor{}
 
 	processor.LoadDays()
 
-	findDayErr := processor.FindDay(date)
+	findDayErr := processor.FindDay(plantDate)
 	if findDayErr != nil {
 		fmt.Println(findDayErr)
 	}
 
-	harvestDay, findHarvestErr := processor.FindHarvestDay()
+	resDays, findHarvestErr := processor.FindHarvestDay()
 	if findHarvestErr != nil {
 		fmt.Println(findHarvestErr)
 	}
 
-	harvestDate := library.YearDay2Date(harvestDay.ID)
+	var resDates = make([]string, 0)
+	resDates = append(resDates, plantDate)
+
+	for _, v := range resDays {
+		resDates = append(resDates, library.YearDay2Date(v.ID))
+	}
 
 	response.Code = 0
 	response.Msg = "success"
-	response.Data = harvestDate
+	response.Data = resDates
 
-	fmt.Println("harvest date:", harvestDate)
+	fmt.Println("res dates:", resDates)
 	fmt.Fprintf(w, genJSONStr(response))
 }
 

@@ -12,6 +12,7 @@ import (
 
 const (
 	growthToHarvest = 8
+
 )
 
 type Processor struct {
@@ -79,20 +80,23 @@ func (p *Processor) FindDay(date string) error {
 	return nil
 }
 
-func (p *Processor) FindHarvestDay() (Day, error) {
+func (p *Processor) FindHarvestDay() ([]Day, error) {
 	if len(p.Calendar.Days) != 365 {
-		return Day{}, errors.New("calendar not loaded")
+		return []Day{}, errors.New("calendar not loaded")
 	}
 	if p.Today.Season == "" {
-		return Day{}, errors.New("today not loaded")
+		return []Day{}, errors.New("today not loaded")
 	}
 
-	var harVestDay Day
+	var resDays = make([]Day, 0)
+
 	var lastWeather = p.Today.Weather
 	var lastSeason = p.Today.Season
 	var growth = 0
 
 	for i := p.Today.ID; ; i++ {
+		var targetDay Day
+
 
 		if i >= 365 {
 			i = 0
@@ -115,13 +119,34 @@ func (p *Processor) FindHarvestDay() (Day, error) {
 			lastWeather = p.Calendar.Days[i].Weather
 		}
 
-		if growth == growthToHarvest {
-			harVestDay = p.Calendar.Days[i]
-			fmt.Println("harvest:", i, harVestDay)
-			break
+		if growth == growthToHarvest && len(resDays) == 0 {
+			targetDay = p.Calendar.Days[i]
+			fmt.Println("harvest:", i, targetDay)
+			resDays = append(resDays, targetDay)
+			continue
 		}
 
+		if growth == growthToHarvest + 1&& len(resDays) == 1 {
+			targetDay = p.Calendar.Days[i]
+			fmt.Println("expire1:", i, targetDay)
+			resDays = append(resDays, targetDay)
+			continue
+		}
+
+		if growth == growthToHarvest + 2 && len(resDays) == 2{
+			targetDay = p.Calendar.Days[i]
+			fmt.Println("expire2:", i, targetDay)
+			resDays = append(resDays, targetDay)
+			continue
+		}
+
+		if growth == growthToHarvest + 3 && len(resDays) == 3{
+			targetDay = p.Calendar.Days[i]
+			fmt.Println("expire3:", i, targetDay)
+			resDays = append(resDays, targetDay)
+			break
+		}
 	}
 
-	return harVestDay, nil
+	return resDays, nil
 }
