@@ -2,8 +2,8 @@ package http
 
 import (
 	"encoding/json"
-	"farmerCalendar/library"
-	"farmerCalendar/service"
+	"lifeisFarm/library"
+	"lifeisFarm/service"
 	"fmt"
 	"net/http"
 )

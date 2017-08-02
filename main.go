@@ -1,7 +1,7 @@
 package main
 
 import (
-	"farmerCalendar/handler/http"
+	"lifeisFarm/handler/http"
 	"sync"
 )
 

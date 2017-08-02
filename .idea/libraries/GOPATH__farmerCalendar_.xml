@@ -35,7 +35,7 @@
       <root url="file://$PROJECT_DIR$/../helloworld" />
     </SOURCES>
     <excluded>
-      <root url="file://$PROJECT_DIR$" />
+      <root url="file://$PROJECT_DIR$/../lifeisFarm" />
     </excluded>
   </library>
 </component>

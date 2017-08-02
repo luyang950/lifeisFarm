@@ -2,7 +2,7 @@ package service
 
 import (
 	"encoding/xml"
-	"farmerCalendar/library"
+	"lifeisFarm/library"
 	"fmt"
 	"github.com/pkg/errors"
 	"io/ioutil"
